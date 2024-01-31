@@ -1,0 +1,30 @@
+---
+import Close from "../../icons/Close.astro"
+import Menu from "../../icons/Menu.astro"
+---
+<nav id="nav" class="w-full fixed top-0 z-50 bg-white">
+  <div class="max-w-7xl mx-auto p-5 flex items-center justify-between">
+    <img class="h-10 object-cover" src="/logo.png" alt="">
+    <ul id="menu" class="fixed top-0 right-0 w-1/2 h-dvh flex flex-col justify-center text-center gap-10 bg-white/50 backdrop-blur-3xl p-5 translate-x-full target:translate-x-0 transition-transform md:static md:w-auto md:h-auto md:translate-x-0 md:flex-row md:p-0 md:gap-5 md:backdrop-blur-none md:bg-transparent">
+      <li>
+        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="home">Inicio</a>
+      </li>
+      <li>
+        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="about">Nosotros</a>
+      </li>
+      <li>
+        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="services">Servicios</a>
+      </li>
+      <li>
+        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="contact">Contacto</a>
+      </li>
+
+      <a href="#nav" class="absolute top-5 right-5 bg-degradate-500 rounded-full p-1 hover:bg-red-500 hover:text-white hover:-rotate-90 transition-all md:hidden">
+        <Close class="size-7"/>
+      </a>
+    </ul>
+    <a href="#menu" class="block p-1 md:hidden">
+      <Menu class="size-7"/>
+    </a>
+  </div>
+</nav>
