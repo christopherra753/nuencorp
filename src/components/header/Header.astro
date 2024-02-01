@@ -1,25 +1,54 @@
 ---
-import Chevron from "../../icons/Chevron.astro";
+import Badge from "../../icons/Badge.astro";
 ---
 
-<header class="max-w-2xl mx-auto lg:max-w-7xl mt-20">
-  <section>
-    <h2 class="text-3xl font-bold text-balance">
-      Conectando Destinos, 
-      <span class="text-primary-400">Superando Expectativas.</span>
-    </h2>
-    <div class="flex gap-5">
-      <a class="inline-flex items-center bg-primary-200 hover:bg-primary-300 transition-colors text-white px-6 py-2 rounded-md" href="#services">
-        Servicios
-        <Chevron class="size-5"/>
-      </a>
-      <a class="inline-flex items-center border border-primary-200 text-degradate-900 transition-colors px-6 py-2 rounded-md" href="#contact">
-        Contactanos
-        <Chevron class="size-5"/>
-      </a>
+<header class="max-w-xl relative flex flex-col md:flex-row gap-5 md:max-w-7xl mx-auto mt-20 px-5 py-24">
+  <section class="relative w-full z-10 flex flex-col md:justify-center gap-4">
+    <h1 class="text-3xl leading-none md:max-w-md text-balance font-semibold">
+      Donde cada envío es un 
+      <span class="text-primary-500">compromiso de excelencia.</span>
+    </h1>
+    <ul class="flex flex-col gap-2 md:max-w-md lg:max-w-xl">
+      <li>
+        <h4 class="flex items-center gap-1 tracking-wide font-medium">
+          <Badge class="min-w-5 size-5 fill-primary-500"/>
+          Confianza
+        </h4>
+        <p class="text-sm text-degradate-900 text-pretty leading-relaxed">
+          Construimos relaciones solidas basadas en la transparencia y la confianza. Cuente con nosotros para cumplir sus compromisos de manera consistente.
+        </p>
+      </li>
+      <li>
+        <h4 class="flex items-center gap-1 tracking-wide font-medium">
+          <Badge class="min-w-5 size-5 fill-primary-500"/>
+          Innovación
+        </h4>
+        <p class="text-sm text-degradate-900 text-pretty leading-relaxed">
+          Mantenemos un enfoque proactivo en la adopción de tecnologías emergentes para mejorar continuamente nuestros servicios y ofrecer soluciones logísticas de vanguardia.
+        </p>
+      </li>
+      <li>
+        <h4 class="flex items-center gap-1 tracking-wide font-medium">
+          <Badge class="min-w-5 size-5 fill-primary-500"/>
+          Puntualidad        
+        </h4>
+        <p class="text-sm text-degradate-900 text-pretty leading-relaxed">
+          Comprometidos con la importancia de ser puntuales en las entregas de productos y servicios.
+        </p>
+      </li>
+    </ul>
+  </section>
+  <section class="relative md:absolute md:top-0 md:right-5 md:w-1/2 md:h-full">
+    <img src="/header.jpg" class="w-full h-full object-cover rounded-md" alt="">
+    <div class="hidden md:block absolute top-0 left-0 h-full fill-white" >
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M80.98,-36.98 C110.89,30.11 112.58,86.36 83.23,198.86 L0.00,150.00 L0.00,0.00 Z" ></path>
+      </svg>
     </div>
   </section>
-  <section>
-    <img src="/header.jpg" alt="">
-  </section>
 </header>
+
+
+
+
+
+
