@@ -2,21 +2,21 @@
 import Close from "../../icons/Close.astro"
 import Menu from "../../icons/Menu.astro"
 ---
-<nav id="nav" class="w-full bg-white fixed top-0 z-50">
+<nav id="nav" class="w-full fixed top-0 z-20">
   <div class="max-w-7xl mx-auto p-5 flex items-center justify-between">
-    <img class="h-10 object-cover" src="/logo.png" alt="">
-    <ul id="menu" class="fixed top-0 right-0 w-1/2 h-dvh flex flex-col justify-center text-center gap-10 bg-white/50 backdrop-blur-3xl p-5 translate-x-full target:translate-x-0 transition-transform md:static md:w-auto md:h-auto md:translate-x-0 md:flex-row md:p-0 md:gap-5 md:backdrop-blur-none md:bg-transparent">
+    <img class="h-12 object-cover" src="/logo.png" alt="">
+    <ul id="menu" class="fixed top-0 bg-white md:bg-transparent right-0 w-1/2 h-dvh flex flex-col justify-center text-center gap-10  p-5 translate-x-full target:translate-x-0 transition-transform md:static md:w-auto md:h-auto md:translate-x-0 md:flex-row md:p-0 md:gap-5 ">
       <li>
-        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="home">Inicio</a>
+        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="#home">Inicio</a>
       </li>
       <li>
-        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="about">Nosotros</a>
+        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="#about">Nosotros</a>
       </li>
       <li>
-        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="services">Servicios</a>
+        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="#services">Servicios</a>
       </li>
       <li>
-        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="contact">Contacto</a>
+        <a class="block hover:bg-primary-500 hover:text-white transition-colors rounded-lg px-4 py-2" href="#contact">Contacto</a>
       </li>
 
       <a href="#nav" class="absolute top-5 right-5 bg-degradate-500 rounded-full p-1 hover:bg-red-500 hover:text-white hover:-rotate-90 transition-all md:hidden">
@@ -28,3 +28,18 @@ import Menu from "../../icons/Menu.astro"
     </a>
   </div>
 </nav>
+
+<style>
+  #nav {
+  animation: blur linear both;
+  animation-timeline: scroll();
+  animation-range: 0 200px;
+  }
+
+  @keyframes blur {
+    to {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+    }
+  }
+</style>
