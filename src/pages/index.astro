@@ -4,13 +4,15 @@ import Layout from '../layouts/Layout.astro';
 import Nav from "../components/nav/Nav.astro"
 import Header from '../components/header/Header.astro';
 import About from '../components/about/About.astro';
+import Services from "../components/services/Services.astro"
 ---
 
 <Layout title="Nuencorp SAC">
 	<Nav />
 	<Header />
-	<main class="mt-20">
+	<main class="mt-20 flex flex-col gap-20">
 		<About />
+		<Services />
 	</main>
 </Layout>
 
